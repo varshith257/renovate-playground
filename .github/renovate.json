@@ -1,16 +1,16 @@
 {
   "extends": [
-    "config:base",
+    "config:recommended",
     "security:only-security-updates"
   ],
-
   "vulnerabilityAlerts": {
     "enabled": true
   },
-
   "packageRules": [
     {
-      "matchManagers": ["gomod"],
+      "matchManagers": [
+        "gomod"
+      ],
       "enabled": false
     }
   ]
